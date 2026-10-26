@@ -39,12 +39,15 @@ capabilities:
           - models.dev
           - api.openchamber.dev
           - "*.opencode.ai"
-          - registry.npmjs.org
+          - "*.npmjs.org"
+          # Search
+          - api.tavily.com
+          - mcp.exa.ai
           # Language-server and release downloads.
           - github.com
+          - gitlab.com
           - api.github.com
           - raw.githubusercontent.com
           - objects.githubusercontent.com
+          - release-assets.githubusercontent.com
 
-  # The server must outlive the terminal session that started the sandbox.
-  - type: com.docker.sandbox/long-running@1
